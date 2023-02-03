@@ -2,11 +2,7 @@
 
 ---
 
-# Consumer - Java
-
----
-
-[DocumentaÁ„o Function\<T, R>](https://docs.oracle.com/javase/10/docs/api/java/util/function/Function.html)
+[Documenta√ß√£o Function\<T, R>](https://docs.oracle.com/javase/10/docs/api/java/util/function/Function.html)
 
 
 ~~~~java
@@ -27,17 +23,17 @@ List<Product> list = new ArrayList<>();
     list.add(new Product("HD Case", 80.90));
 ~~~~
 
-## Nota sobre a funÁ„o map
-ï A funÁ„o "map" (n„o confunda com a estrutura de dados Map) È uma
-funÁ„o que aplica uma funÁ„o a todos elementos de uma stream. <br>
+## Nota sobre a fun√ß√£o map
+‚Ä¢ A fun√ß√£o "map" (n√£o confunda com a estrutura de dados Map) √© uma
+fun√ß√£o que aplica uma fun√ß√£o a todos elementos de uma stream. <br>
 
-ï Conversıes:<br>
+‚Ä¢ Convers√µes:<br>
     - List para stream: .stream()<br>
     - Stream para List: .collect(Collectors.toList())<br>
 
-### Versıes de implementaÁ„o Predicate:
+### Vers√µes de implementa√ß√£o Predicate:
 
-ï ImplementaÁ„o da interface <br>
+‚Ä¢ Implementa√ß√£o da interface <br>
 
 ~~~~java
 public class UpperCaseName implements Function<Product, String> {
@@ -48,8 +44,8 @@ public class UpperCaseName implements Function<Product, String> {
     }
 }
 ~~~~
-ï Reference method com mÈtodo est·tico<br>
-ï Reference method com mÈtodo n„o est·tico<br>
+‚Ä¢ Reference method com m√©todo est√°tico<br>
+‚Ä¢ Reference method com m√©todo n√£o est√°tico<br>
 ~~~~java
 
 public class Program {
@@ -68,7 +64,7 @@ public class Program {
 	}
 }
 ~~~~
-ï Express„o lambda declarada<br>
+‚Ä¢ Express√£o lambda declarada<br>
 
 ~~~~java
 
@@ -91,7 +87,7 @@ public class Program {
 }
 ~~~~
 
-ï Express„o lambda inline
+‚Ä¢ Express√£o lambda inline
 
 ~~~~java
 
@@ -106,7 +102,7 @@ public class Program {
 		list.add(new Product("Tablet", 350.50));
 		list.add(new Product("HD Case", 80.90));
         
-                double factor = 1.1; // Permite a utilizaÁ„o de vari·veis
+                double factor = 1.1; // Permite a utiliza√ß√£o de vari√°veis
 
         List<String> names = list.stream().map(p -> p.getName().toUpperCAse()).collect(Collectors.toList());
         names.forEach(System.ou::println);
